@@ -1,0 +1,238 @@
+<title>Swapnil Patil Kundli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like a bound janma-patrika, with the chart diagrams set side by side where width allows */
+:root{
+  --bg:#eef0f5; --paper:#f8f9fc; --ink:#1d2140; --muted:#5b6084; --line:#c9cde0;
+  --saffron:#b8650f; --gold:#8a6d1c; --good:#2f7a4b; --warn:#a4462b; --chip:#e3e6f1;
+  --display:"Philosopher",Georgia,serif; --body:"Alegreya Sans","Segoe UI",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12142a; --paper:#1a1d38; --ink:#e6e7f3; --muted:#a3a7c7; --line:#353a63;
+  --saffron:#f0a24a; --gold:#d9bb62; --good:#6cc28e; --warn:#ef8a6c; --chip:#262a4d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12142a; --paper:#1a1d38; --ink:#e6e7f3; --muted:#a3a7c7; --line:#353a63;
+  --saffron:#f0a24a; --gold:#d9bb62; --good:#6cc28e; --warn:#ef8a6c; --chip:#262a4d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);padding:0 16px}
+main{max-width:880px;margin:0 auto;padding-block:40px 64px;display:grid;gap:48px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0}
+h1{font-size:2.6rem}
+h2{font-size:1.75rem;color:var(--ink);display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+h2 small{font:500 .8rem var(--mono);color:var(--saffron);letter-spacing:.08em;text-transform:uppercase}
+h3{font-size:1.2rem;margin-top:.5rem}
+p{margin:0;max-width:68ch}
+section{display:grid;gap:18px}
+.eyebrow{font:500 .78rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--saffron)}
+header{display:grid;gap:14px;border-bottom:1px solid var(--line);padding-bottom:28px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;font:.9rem var(--mono);color:var(--muted)}
+.facts b{color:var(--ink);font-weight:500}
+.big3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.big3 div{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.big3 span{display:block;font:.72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.big3 strong{font:700 1.25rem var(--display)}
+.big3 em{display:block;font-style:normal;color:var(--muted);font-size:.9rem}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+figure{margin:0;display:grid;gap:8px;min-width:0}
+figcaption{font:.85rem var(--mono);color:var(--muted);text-align:center}
+svg.kundli{width:100%;max-width:380px;height:auto;justify-self:center;background:var(--paper);border:1.5px solid var(--gold)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.m{font-family:var(--mono);font-size:.88rem}
+.r{color:var(--warn);font:500 .75rem var(--mono)}
+.points{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.points li{padding-left:18px;border-left:2px solid var(--line);max-width:72ch}
+.points li b{color:var(--saffron);font-weight:700}
+.chip{display:inline-block;font:500 .72rem var(--mono);padding:2px 8px;border-radius:99px;background:var(--chip);color:var(--muted);letter-spacing:.04em}
+.chip.good{color:var(--good)} .chip.warn{color:var(--warn)}
+.timeline{display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.tl{position:relative;padding:4px 0 20px 22px;display:grid;gap:4px}
+.tl::before{content:"";position:absolute;left:-7px;top:10px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--muted)}
+.tl.now::before{background:var(--saffron);border-color:var(--saffron)}
+.tl .when{font:500 .82rem var(--mono);color:var(--muted)}
+.tl.now .when{color:var(--saffron)}
+.tl h3{margin:0;font-size:1.1rem}
+.window{background:var(--paper);border:1.5px solid var(--saffron);border-radius:6px;padding:18px 20px;display:grid;gap:10px}
+.note{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:520px){h1{font-size:2rem} body{font-size:16px}}
+</style>
+
+<main>
+<header>
+  <div class="eyebrow">Janma Kundli · Birth, marriage &amp; life chart</div>
+  <h1>Swapnil Patil</h1>
+  <div class="facts">
+    <span>Born <b>Wed 8 Oct 1997, 4:51 PM IST</b></span>
+    <span>Place <b>Borivali, Mumbai</b> 19.23°N 72.86°E</span>
+    <span>Ayanamsa <b>Lahiri 23°49′</b></span>
+  </div>
+  <div class="big3">
+    <div><span>Lagna (Ascendant)</span><strong>Kumbha · Aquarius</strong><em>23°41′, Purva Bhadrapada</em></div>
+    <div><span>Rashi (Moon sign)</span><strong>Dhanu · Sagittarius</strong><em>8°31′, Mula nakshatra pada 3</em></div>
+    <div><span>Surya (Sun sign)</span><strong>Kanya · Virgo</strong><em>Western: Sun in Libra</em></div>
+  </div>
+</header>
+
+<!-- ========== BIRTH CHART ========== -->
+<section id="birth">
+  <h2><small>Part 1</small> Birth chart (Rashi, D1)</h2>
+  <div class="charts">
+    <figure><svg class="kundli" id="d1" viewBox="0 0 300 300" role="img" aria-label="North Indian Rashi chart"></svg>
+      <figcaption>Rashi chart · North Indian style · house 1 at top</figcaption></figure>
+    <figure><svg class="kundli" id="d9" viewBox="0 0 300 300" role="img" aria-label="North Indian Navamsa chart"></svg>
+      <figcaption>Navamsa (D9) · the marriage chart</figcaption></figure>
+  </div>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Graha</th><th>Sign &amp; degree</th><th>House</th><th>Nakshatra</th><th>D9 sign</th><th>Dignity</th></tr></thead>
+    <tbody>
+      <tr><td>Lagna</td><td class="m">Aquarius 23°41′</td><td class="m">1</td><td>P. Bhadrapada 2</td><td>Taurus</td><td>Lord Saturn</td></tr>
+      <tr><td>Sun</td><td class="m">Virgo 21°23′</td><td class="m">8</td><td>Hasta 4</td><td>Cancer</td><td>Neutral · 7th lord</td></tr>
+      <tr><td>Moon</td><td class="m">Sagittarius 8°31′</td><td class="m">11</td><td>Mula 3</td><td>Gemini</td><td>Friendly</td></tr>
+      <tr><td>Mercury</td><td class="m">Virgo 17°20′</td><td class="m">8</td><td>Hasta 3</td><td>Gemini</td><td><span class="chip good">Exalted · Moolatrikona</span></td></tr>
+      <tr><td>Venus</td><td class="m">Scorpio 6°18′</td><td class="m">10</td><td>Anuradha 1</td><td>Leo</td><td>Yogakaraka</td></tr>
+      <tr><td>Mars</td><td class="m">Scorpio 12°54′</td><td class="m">10</td><td>Anuradha 3</td><td>Libra</td><td><span class="chip good">Own sign</span></td></tr>
+      <tr><td>Jupiter</td><td class="m">Capricorn 18°16′</td><td class="m">12</td><td>Shravana 3</td><td>Gemini</td><td><span class="chip warn">Debilitated</span> <span class="chip good">Neecha bhanga</span></td></tr>
+      <tr><td>Saturn <span class="r">R</span></td><td class="m">Pisces 23°13′</td><td class="m">2</td><td>Revati 2</td><td>Capricorn</td><td>Lagna lord</td></tr>
+      <tr><td>Rahu</td><td class="m">Leo 24°22′</td><td class="m">7</td><td>P. Phalguni 4</td><td>Scorpio</td><td>—</td></tr>
+      <tr><td>Ketu</td><td class="m">Aquarius 24°22′</td><td class="m">1</td><td>P. Bhadrapada 2</td><td>Taurus</td><td>—</td></tr>
+    </tbody></table></div>
+
+  <h3>What stands out</h3>
+  <ul class="points">
+    <li><b>Kumbha lagna with Ketu in the 1st.</b> An independent, thoughtful, somewhat detached temperament. You tend to see the bigger system rather than the single detail, and you can feel like an outsider in groups even when people rely on you. Ketu here gives intuition and a spiritual streak, plus periods of asking "who am I, really?"</li>
+    <li><b>Ruchaka Mahapurusha yoga.</b> Mars in its own sign Scorpio in the 10th house, a kendra. This is one of the five "great person" yogas: drive, courage, ability to take charge, and a career that demands stamina. It is joined by <b>Venus, the yogakaraka</b> for Aquarius lagna (lord of the 4th and 9th), in the same 10th house. Career is the strongest house in the chart.</li>
+    <li><b>Budha-Aditya yoga in the 8th.</b> Sun with exalted Mercury in Virgo. A sharp analytical, research-minded intellect with a liking for hidden or technical subjects: data, finance, investigation, psychology, occult sciences, writing about deep topics. The 8th also rules sudden changes and shared resources, so life can turn in unexpected directions and joint finances matter.</li>
+    <li><b>Moon in the 11th, in Mula.</b> Emotionally optimistic and goal-driven, fulfilment through friends, networks and elder siblings. Mula nakshatra (ruled by Ketu) likes to get to the root of things and often uproots and rebuilds life at key points.</li>
+    <li><b>Jupiter debilitated in the 12th, with cancellation.</b> Jupiter rules your 2nd (wealth, family) and 11th (gains). Its debility is cancelled because Saturn (lord of Capricorn) is in a kendra from the Moon and Mars (exalted in Capricorn) sits in a kendra from the lagna. Read as: gains and savings come through effort after early setbacks, with expenses on travel, foreign links, or spiritual pursuits.</li>
+    <li><b>Lagna lord Saturn retrograde in the 2nd.</b> Measured speech, a serious view of money and family duty, and wealth that builds slowly and steadily across life rather than early.</li>
+  </ul>
+</section>
+
+<!-- ========== MARRIAGE CHART ========== -->
+<section id="marriage">
+  <h2><small>Part 2</small> Marriage chart</h2>
+  <p>Marriage is judged from the 7th house and its lord in the Rashi chart, from Venus, and from the Navamsa (D9) chart shown above.</p>
+  <ul class="points">
+    <li><b>7th house Leo with Rahu.</b> The Rahu–Ketu axis runs across your 1st and 7th houses, and it repeats in the Navamsa (Ketu on the D9 lagna, Rahu in the D9 7th). Partnership is a central life lesson. This placement often brings a spouse from a different community, region, culture or background, or a relationship that begins in an unconventional way. Expect strong attraction and a partner with presence and ambition.</li>
+    <li><b>7th lord Sun in the 8th with exalted Mercury.</b> Suggests an intelligent, articulate, detail-oriented partner, possibly working in analysis, medicine, finance, research or communication. Marriage tends to be transformative and can bring wealth or support through in-laws. Keep ego clashes in check; the Sun wants respect in the relationship.</li>
+    <li><b>Venus with Mars in Scorpio.</b> Intense, passionate and loyal in love. Feelings run deep and possessiveness can appear. Honest communication keeps this energy healthy.</li>
+    <li><b>Navamsa: Taurus lagna, Venus in Leo in the 4th.</b> The D9 lagna lord sits in a kendra, a good sign for domestic comfort and a settled home after marriage. Saturn in its own sign Capricorn in the D9 9th gives a marriage that matures and grows more stable over time.</li>
+    <li><b>Upapada lagna in Taurus (4th house).</b> Its lord Venus is strong in the 10th. Married life is linked to home, property and a shared social standing.</li>
+    <li><b>Mangal dosha: mild.</b> Mars is not in a dosha house from the lagna (it is in the 10th). From the Moon it falls in the 12th, which some traditions count. Mars in its own sign is widely treated as a cancelling factor. Matching with a partner who has a similar Mars placement is a common, sensible precaution.</li>
+  </ul>
+
+  <div class="window">
+    <div class="eyebrow">Most supportive marriage window</div>
+    <h3 style="margin:0">Mid-2027 to early 2029, strongest June – November 2027</h3>
+    <p>Several classical timing factors line up here:</p>
+    <ul class="points">
+      <li>Moon–Mars antardasha (Feb–Sep 2027) activates the Venus–Mars conjunction, and then Moon–Rahu antardasha (Sep 2027 – Mar 2029) activates Rahu sitting in your 7th house.</li>
+      <li>Jupiter transits Leo, your 7th house: Nov 2026 – Jan 2027, Jun – Nov 2027, and Mar – Jul 2028.</li>
+      <li>Saturn in Pisces aspects your 7th lord Sun until June 2027, completing the "double transit" of Jupiter and Saturn on the marriage houses in mid-2027.</li>
+      <li>In Western astrology your first Saturn Return is exact around April 2027, a classic time for serious commitments.</li>
+    </ul>
+    <p>Late 2026 (Moon–Moon antardasha plus Jupiter's first entry into Leo) is a good time for meeting someone or for a proposal.</p>
+  </div>
+</section>
+
+<!-- ========== LIFE CHART ========== -->
+<section id="life">
+  <h2><small>Part 3</small> Life chart (Vimshottari dasha)</h2>
+  <p>Born in Mula nakshatra, you began life in Ketu mahadasha with 2 years 6 months left. The major periods below shape the chapters of life.</p>
+  <div class="timeline">
+    <div class="tl"><span class="when">1997 – Apr 2000 · age 0–2</span><h3>Ketu mahadasha</h3><p>Early childhood.</p></div>
+    <div class="tl"><span class="when">Apr 2000 – Apr 2020 · age 2–22</span><h3>Venus mahadasha</h3><p>Venus is your yogakaraka in the 10th. A comfortable, formative 20 years for education and building skills. Sade Sati (Saturn over the Moon, ~2014 – Jan 2023) made the late teens and early twenties feel heavier and demanded maturity.</p></div>
+    <div class="tl"><span class="when">Apr 2020 – Apr 2026 · age 22–28</span><h3>Sun mahadasha</h3><p>Sun rules your 7th and sits in the 8th. Years of transformation, self-definition and serious thinking about partnerships, with sudden changes in direction and a push to establish your own identity and authority.</p></div>
+    <div class="tl now"><span class="when">Apr 2026 – Apr 2036 · age 28–38 · now</span><h3>Moon mahadasha</h3><p>Moon rules your 6th and sits in the 11th house of gains. A decade of steady progress through hard work, service and networks: promotions, competitive wins, and income growth. Expect a strong focus on health routines and daily discipline. Marriage and family building are well indicated early in this period. Until June 2027 Saturn transits the 4th from your Moon (Kantaka Shani), which can bring home or work pressure. Stay patient.</p></div>
+    <div class="tl"><span class="when">Apr 2036 – Apr 2043 · age 38–45</span><h3>Mars mahadasha</h3><p>Mars is your Ruchaka yoga planet in the 10th. This is likely your career peak: leadership, property acquisition (Mars rules the 3rd and 10th), and bold independent moves.</p></div>
+    <div class="tl"><span class="when">Apr 2043 – Apr 2061 · age 45–63</span><h3>Rahu mahadasha</h3><p>Rahu in the 7th: business partnerships, foreign connections, public dealings and big ambitions. Results depend on partners' integrity. A second Sade Sati around 2043–2050 asks for caution with health and finances.</p></div>
+    <div class="tl"><span class="when">Apr 2061 – Apr 2077 · age 63–79</span><h3>Jupiter mahadasha</h3><p>With neecha bhanga, Jupiter gives wisdom, spiritual interest, charity and time with family and grandchildren.</p></div>
+    <div class="tl"><span class="when">2077 onward</span><h3>Saturn mahadasha</h3><p>Lagna lord period: a calm, reflective later life.</p></div>
+  </div>
+
+  <h3>Moon mahadasha, sub-periods</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Antardasha</th><th>From</th><th>To</th><th>Theme</th></tr></thead>
+    <tbody>
+      <tr><td>Moon – Moon</td><td class="m">Apr 2026</td><td class="m">Feb 2027</td><td>New chapter, emotional reset, networking</td></tr>
+      <tr><td>Moon – Mars</td><td class="m">Feb 2027</td><td class="m">Sep 2027</td><td>Career push, romance, courage</td></tr>
+      <tr><td>Moon – Rahu</td><td class="m">Sep 2027</td><td class="m">Mar 2029</td><td>Partnership, marriage, foreign links</td></tr>
+      <tr><td>Moon – Jupiter</td><td class="m">Mar 2029</td><td class="m">Jul 2030</td><td>Wealth, family growth, children</td></tr>
+      <tr><td>Moon – Saturn</td><td class="m">Jul 2030</td><td class="m">Feb 2032</td><td>Hard work, responsibility, savings</td></tr>
+      <tr><td>Moon – Mercury</td><td class="m">Feb 2032</td><td class="m">Jul 2033</td><td>Learning, research, writing, trade</td></tr>
+      <tr><td>Moon – Ketu</td><td class="m">Jul 2033</td><td class="m">Feb 2034</td><td>Detachment, inner work</td></tr>
+      <tr><td>Moon – Venus</td><td class="m">Feb 2034</td><td class="m">Oct 2035</td><td>Comfort, vehicles, home, recognition</td></tr>
+      <tr><td>Moon – Sun</td><td class="m">Oct 2035</td><td class="m">Apr 2036</td><td>Authority, government links</td></tr>
+    </tbody></table></div>
+
+  <h3>Life areas at a glance</h3>
+  <ul class="points">
+    <li><b>Career.</b> The strongest area. Suited to roles needing strategy and endurance: management, engineering, technology, finance, research, law, defence or administration. Leadership positions come with time.</li>
+    <li><b>Wealth.</b> Slow and steady (Saturn in the 2nd). Gains through networks and elder contacts (Moon in the 11th). Guard against overspending on travel and comforts (Jupiter in the 12th).</li>
+    <li><b>Health.</b> Watch the nervous system, stress, and digestion (Virgo in the 8th). Regular routine and sleep matter more than usual for you.</li>
+    <li><b>Spiritual life.</b> Ketu in the lagna and Jupiter in the 12th give a real interest in meditation, philosophy and pilgrimage that grows with age.</li>
+  </ul>
+</section>
+
+<!-- ========== WESTERN ========== -->
+<section id="western">
+  <h2><small>Part 4</small> Western (tropical) chart</h2>
+  <p>The same moment in the Western zodiac, with Placidus houses. It tells a consistent story: relationships (Sun, Mercury and the North Node in the 7th) and public achievement (Moon at the top of the chart) are the main themes.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Point</th><th>Position</th><th>House</th></tr></thead>
+    <tbody>
+      <tr><td>Ascendant</td><td class="m">Pisces 17°30′</td><td class="m">—</td></tr>
+      <tr><td>Midheaven</td><td class="m">Sagittarius 21°01′</td><td class="m">—</td></tr>
+      <tr><td>Sun</td><td class="m">Libra 15°12′</td><td class="m">7</td></tr>
+      <tr><td>Moon</td><td class="m">Capricorn 2°20′</td><td class="m">10</td></tr>
+      <tr><td>Mercury</td><td class="m">Libra 11°09′</td><td class="m">7</td></tr>
+      <tr><td>Venus</td><td class="m">Sagittarius 0°08′</td><td class="m">9</td></tr>
+      <tr><td>Mars</td><td class="m">Sagittarius 6°43′</td><td class="m">9</td></tr>
+      <tr><td>Jupiter</td><td class="m">Aquarius 12°05′</td><td class="m">11</td></tr>
+      <tr><td>Saturn <span class="r">R</span></td><td class="m">Aries 17°02′</td><td class="m">1</td></tr>
+      <tr><td>Uranus <span class="r">R</span></td><td class="m">Aquarius 4°45′</td><td class="m">11</td></tr>
+      <tr><td>Neptune <span class="r">R</span></td><td class="m">Capricorn 27°10′</td><td class="m">11</td></tr>
+      <tr><td>Pluto</td><td class="m">Sagittarius 3°40′</td><td class="m">9</td></tr>
+      <tr><td>North Node</td><td class="m">Virgo 18°12′</td><td class="m">7</td></tr>
+    </tbody></table></div>
+  <ul class="points">
+    <li><b>Libra Sun, Capricorn Moon, Pisces Rising.</b> Diplomatic and fair-minded at the core, emotionally disciplined and ambitious, and gentle and intuitive in how others first see you.</li>
+    <li><b>Sun trine Jupiter, Mercury trine Jupiter.</b> Optimism, good judgement and luck through ideas and people.</li>
+    <li><b>Sun and Mercury opposite Saturn.</b> Tension between your own needs and duty or authority. Pressure early in life, lasting strength later.</li>
+    <li><b>Venus conjunct Mars and Pluto in Sagittarius.</b> Passionate, adventurous, all-or-nothing in love. Attracted to partners from other cultures or with a strong worldview.</li>
+    <li><b>North Node on the Descendant.</b> Growth comes through partnership and learning to share life with another person.</li>
+  </ul>
+</section>
+
+<p class="note">Calculated with the Swiss Ephemeris for 11:21 UT on 8 October 1997, Lahiri ayanamsa, whole-sign houses for the Vedic chart and Placidus for the Western chart. Rahu and Ketu use the mean node. The ascendant changes about one degree every four minutes, so an accurate birth time matters for house placements. Astrology is a symbolic and reflective tradition, not a scientific prediction. Treat these readings as prompts for self-reflection, and make important decisions on practical grounds.</p>
+</main>
+
+<script>
+(function(){
+  // House label anchors for a 300×300 North Indian chart (house 1 top centre, counter-clockwise).
+  const A={1:[150,78],2:[75,28],3:[26,75],4:[78,150],5:[26,225],6:[75,272],7:[150,222],8:[225,272],9:[274,225],10:[222,150],11:[274,75],12:[225,28]};
+  const N={1:[150,128],2:[75,64],3:[62,75],4:[128,150],5:[62,225],6:[75,238],7:[150,172],8:[225,238],9:[238,225],10:[172,150],11:[238,75],12:[225,64]};
+  function draw(id,lagnaSign,houses){
+    const s=document.getElementById(id), ns="http://www.w3.org/2000/svg";
+    const el=(t,a,txt)=>{const e=document.createElementNS(ns,t);for(const k in a)e.setAttribute(k,a[k]);if(txt)e.textContent=txt;s.appendChild(e);return e};
+    const st="var(--line)";
+    el("path",{d:"M0 0L300 300M300 0L0 300M150 0L300 150L150 300L0 150Z",fill:"none",stroke:"var(--gold)","stroke-width":"1.2"});
+    for(let h=1;h<=12;h++){
+      const sign=((lagnaSign-1+h-1)%12)+1;
+      el("text",{x:N[h][0],y:N[h][1]+4,"text-anchor":"middle","font-size":"10","font-family":"IBM Plex Mono,monospace",fill:h===1?"var(--saffron)":"var(--muted)"},String(sign));
+      const list=(houses[h]||[]);
+      list.forEach((p,i)=>{
+        el("text",{x:A[h][0],y:A[h][1]+(i-(list.length-1)/2)*15+4,"text-anchor":"middle","font-size":"12.5","font-family":"Alegreya Sans,sans-serif","font-weight":"500",fill:"var(--ink)"},p);
+      });
+    }
+    el("text",{x:150,y:100,"text-anchor":"middle","font-size":"10","font-family":"IBM Plex Mono,monospace",fill:"var(--saffron)"},"Asc");
+  }
+  draw("d1",11,{1:["Ke"],2:["Sa (R)"],7:["Ra"],8:["Su","Me"],10:["Ve","Ma"],11:["Mo"],12:["Ju"]});
+  draw("d9",2,{1:["Ke"],2:["Mo","Me","Ju"],3:["Su"],4:["Ve"],6:["Ma"],7:["Ra"],9:["Sa"]});
+})();
+</script>
